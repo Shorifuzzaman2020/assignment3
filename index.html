@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Shop</title>
+    <script src="https://kit.fontawesome.com/889e400bff.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customGreen: '#179800',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="border-b border-solid border-green-500 lg:border-hidden">
+            <div class="flex justify-around mt-4 items-center">
+                <div>
+                    <img class="hidden lg:inline-block" src="c2-assets/logo-header.png" alt="">
+                    <img class="inline-block mb-3 lg:hidden" src="c2-assets/logo-header-removebg-preview.png" alt="">
+                </div>
+                <div>
+                    <ul class="hidden lg:flex gap-10">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <div class="hidden lg:inline-block">
+                      <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                    <i class="fa-solid fa-cart-shopping mr-2"></i>
+                    <button class="btn btn-outline btn-success! text-black border-green-500 w-20 h-6">Login</button>
+                    <button class="btn btn-success w-28 h-6" style="color: white;">Register</button>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-bars lg:hidden"></i>
+                    </div>
+                </div>
+        </nav>
+        <section class="mt-20">
+          <div class="grid place-content-center">
+            <div>
+              <h1 class="text-4xl font-bold text-center">Freshness <span class="text-green-500">You Can <br>
+                Count</span>  On, Prices You’ll Love!</h1>
+                <p class="text-center mt-8 mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+            </div>
+            <div>
+              <img src="c2-assets/hero-vegetables.png" alt="">
+            </div>
+          </div>
+        </section>
+    </header>
+    <main>
+      <h1>Services</h1>
+      <div class="grid grid-cols-1 lg:grid-cols-3">
+        <div>
+          <img src="c2-assets/service.png" alt="">
+          <h2>24/7 Services </h2>
+          <p>We are committed to providing 24/7 service, ensuring support and assistance anytime you need it. Your satisfaction is our priority, day or night! </p>
+        </div>
+        <div>
+          <img src="c2-assets/delivery.png" alt="">
+          <h2>Fast Delivery </h2>
+          <p>We ensure fast and reliable delivery, getting your orders to you swiftly and securely. Your satisfaction is our priority, with speed you can trust!  </p>
+        </div>
+        <div>
+          <img src="c2-assets/healthy.png" alt="">
+          <h2>Healthy Products  </h2>
+          <p>Our products are made with natural and high-quality ingredients, ensuring a healthy and nutritious choice for you. Stay fit and feel great with every bite! </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
