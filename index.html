@@ -23,6 +23,34 @@
       }
     }
   </script>
+  <style>
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(-10px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animated-text span {
+        opacity: 0;
+        animation: fadeIn 5s ease-out forwards infinite;
+    }
+
+    .animated-text span:nth-child(1) { animation-delay: 0s; }
+    .animated-text span:nth-child(2) { animation-delay: 0.3s; }
+    .animated-text span:nth-child(3) { animation-delay: 0.6s; }
+    .animated-text span:nth-child(4) { animation-delay: 0.9s; }
+    .animated-text span:nth-child(5) { animation-delay: 1.2s; }
+    .animated-text span:nth-child(6) { animation-delay: 1.5s; }
+
+    /* Ensures the animation restarts smoothly */
+    @keyframes fadeLoop {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+    }
+
+    .animated-text {
+        animation: fadeLoop 2s linear infinite;
+    }
+</style>
 </head>
 <body>
     <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
@@ -54,8 +82,11 @@
         <section class="mt-20">
           <div class="grid place-content-center">
             <div>
-              <h1 class="text-4xl font-bold text-center">Freshness <span class="text-green-500">You Can <br>
-                Count</span>  On, Prices You’ll Love!</h1>
+              <h1 class="text-4xl font-bold text-center">
+                Freshness <span class="text-green-600 animated-text">
+                    <span>Y</span><span>o</span><span>u</span> <span>C</span><span>a</span><span>n</span> <br>
+                </span>Count On, Prices You’ll Love!
+            </h1>
                 <p class="text-center mt-8 mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
             </div>
             <div>
@@ -66,7 +97,7 @@
     </header>
     <main>
       <section>
-        <h1 class="mt-20 text-green-500 text-3xl ml-4 lg:ml-32 font-bold lg:-mb-24">Services</h1>
+        <h1 class="mt-20 mb-6 text-green-500 text-3xl ml-4 lg:ml-32 font-bold lg:-mb-24">Services</h1>
       <div class="gap-8 mx-4 grid grid-cols-1 lg:mx-32 lg:grid-cols-3 lg:m-32">
         <div class="border rounded-lg grid place-items-center bg-[#EFEBE3] p-10">
           <img class="bg-white border rounded-full p-2" src="c2-assets/service.png" alt="">
@@ -96,7 +127,7 @@
                 <img class="ml-20 lg:ml-40" src="c2-assets/vegetable-offer.png" alt="">
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -115,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -134,7 +165,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -153,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -172,7 +203,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -191,7 +222,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -210,7 +241,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -229,7 +260,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -248,7 +279,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex bg-white border rounded-lg pt-8">
+            <div class="flex bg-white border rounded-lg pt-2 lg:pt-6">
               <div>
                 <img class="w-16 h-16 m-4" src="c2-assets/potato.png" alt="">
               </div>
@@ -269,6 +300,32 @@
             </div>
           </div>
         </div>
+      </section>
+      <section>
+        <h1 class="mt-20 mb-6 text-green-500 text-3xl ml-4 lg:ml-32 font-bold lg:-mb-24">Recommended for you</h1>
+      <div class="gap-8 mx-4 grid grid-cols-1 lg:mx-32 lg:grid-cols-3 lg:m-32">
+        <div class="border rounded-lg grid place-items-center bg-[#EFEBE3] p-10">
+          <img class="bg-white border rounded-lg p-2" src="c2-assets/soyabin oil.png" alt="">
+          <h2 class="mt-2 text-2xl font-bold">Soyabin Oil (5 Liter)</h2>
+          <p class="mt-1 text-center">1-2 hour delivery</p>
+          <p class="mt-1 text-center text-xl font-bold">$4.35</p>
+          <button class="btn btn-success mt-2" style="color: white; font-weight: 700;">Buy Now</button>
+        </div>
+        <div class="border rounded-lg grid place-items-center bg-[#EFEBE3] p-10">
+          <img class="bg-white border rounded-lg p-2" src="c2-assets/radhuni moshla.png" alt="">
+          <h2 class="mt-2 text-2xl font-bold">Radhuni Moshla</h2>
+          <p class="mt-1 text-center">1-2 hour delivery</p>
+          <p class="mt-1 text-center text-xl font-bold">$1.25</p>
+          <button class="btn btn-success mt-2" style="color: white; font-weight: 700;">Buy Now</button>
+        </div>
+        <div class="border rounded-lg grid place-items-center bg-[#EFEBE3] p-10">
+          <img class="bg-white border rounded-lg p-2" src="c2-assets/eggs.png" alt="">
+          <h2 class="mt-2 text-2xl font-bold">Chicken Egg (12 Piece)</h2>
+          <p class="mt-1 text-center">1-2 hour delivery</p>
+          <p class="mt-1 text-center text-xl font-bold">$1.15</p>
+          <button class="btn btn-success mt-2" style="color: white; font-weight: 700;">Buy Now</button>
+        </div>
+      </div>
       </section>
       <section>
         <h1 class="text-green-500 text-3xl ml-4 font-bold mb-8 mt-14 lg:ml-32 lg:mb-10 lg:mt-16">Arrival & Offers</h1>
